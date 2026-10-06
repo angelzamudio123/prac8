@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Cursos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background: #f4f6f8; color: #333; }
+
+        /* Encabezado */
+        header { background: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd; }
+        header .logo { font-size: 22px; font-weight: bold; color: #0056D2; text-decoration: none; }
+
+        /* Navegación */
+        nav { background: #0056D2; padding: 10px 5%; }
+        nav a { color: white; text-decoration: none; margin-right: 15px; font-weight: 500; }
+
+        /* Cuerpo */
+        main { max-width: 800px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; }
+        .hero { background: #e8f0fe; padding: 20px; border-radius: 5px; margin-bottom: 25px; }
+
+        /* Formulario */
+        form { display: flex; flex-direction: column; gap: 15px; }
+        label { font-weight: bold; font-size: 14px; }
+        input, select, button { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #0056D2; color: white; font-weight: bold; cursor: pointer; border: none; }
+        button:hover { background: #003d99; }
+
+        /* Pie de página */
+        footer { background: #222; color: white; text-align: center; padding: 15px; margin-top: 30px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO -->
+    <header>
+        <a href="#" class="logo">Coursera</a>
+        <span>Portal de Aprendizaje</span>
+    </header>
+
+    <!-- 2. BARRA DE NAVEGACIÓN -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Cursos</a>
+        <a href="#">Certificados</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- 3. CUERPO -->
+    <main>
+        <section class="hero">
+            <h2>Aprende nuevas habilidades hoy</h2>
+            <p>Inscríbete en los mejores cursos en línea y potencia tu carrera.</p>
+        </section>
+
+        <!-- Formulario asignado al sitio de cursos -->
+        <section>
+            <h3>Formulario de Inscripción al Curso</h3>
+            <br>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" id="nombre" placeholder="Ingresa tu nombre" required style="width: 100%;">
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required style="width: 100%;">
+                </div>
+
+                <div>
+                    <label for="curso">Selecciona un Curso:</label>
+                    <select id="curso" name="curso" required style="width: 100%;">
+                        <option value="">-- Elige un curso --</option>
+                        <option value="ia">Inteligencia Artificial</option>
+                        <option value="datos">Análisis de Datos</option>
+                        <option value="python">Programación en Python</option>
+                    </select>
+                </div>
+
+                <button type="submit">Inscribirme ahora</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer>
+        <p>&copy; Angel Eduardo Zamudio Vega.</p>
+        <p>&copy; 24308051280679.</p>
+        <p>&copy; cbtis128.</p>
+        <p>&copy; 5-i.</p>
+    </footer>
+
+</body>
+</html>
