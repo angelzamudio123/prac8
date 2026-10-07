@@ -13,8 +13,29 @@
         header .logo { font-size: 22px; font-weight: bold; color: #0056D2; text-decoration: none; }
 
         /* Navegación */
-        nav { background: #0056D2; padding: 10px 5%; }
-        nav a { color: white; text-decoration: none; margin-right: 15px; font-weight: 500; }
+        nav { background: #0056D2; padding: 10px 5%; display: flex; align-items: center; }
+        
+        /* Botón/Enlace de Inicio destacado */
+        nav a.btn-inicio {
+            background-color: #ffffff;
+            color: #0056D2;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 15px;
+            transition: background 0.2s;
+        }
+        nav a.btn-inicio:hover {
+            background-color: #e8f0fe;
+        }
+
+        nav a.nav-link { 
+            color: white; 
+            text-decoration: none; 
+            margin-right: 15px; 
+            font-weight: 500; 
+        }
 
         /* Cuerpo */
         main { max-width: 800px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; }
@@ -35,16 +56,17 @@
 
     <!-- 1. ENCABEZADO -->
     <header>
-        <a href="#" class="logo">Coursera</a>
+        <a href="index.html" class="logo">Coursera</a>
         <span>Portal de Aprendizaje</span>
     </header>
 
     <!-- 2. BARRA DE NAVEGACIÓN -->
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Cursos</a>
-        <a href="#">Certificados</a>
-        <a href="#">Contacto</a>
+        <!-- Enlace que redirige a index.html -->
+        <a href="index.html" class="btn-inicio">🏠 Inicio</a>
+        <a href="#" class="nav-link">Cursos</a>
+        <a href="#" class="nav-link">Certificados</a>
+        <a href="#" class="nav-link">Contacto</a>
     </nav>
 
     <!-- 3. CUERPO -->
@@ -61,7 +83,7 @@
             <form action="#" method="POST">
                 <div>
                     <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" id="nombre" placeholder="Ingresa tu nombre" required style="width: 100%;">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required style="width: 100%;">
                 </div>
 
                 <div>
